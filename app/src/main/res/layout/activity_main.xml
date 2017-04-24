@@ -10,11 +10,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.fragmenttest.MainActivity">
 
+    <!--<fragment-->
+        <!--android:id="@+id/left_fragment"-->
+        <!--android:name="com.example.fragmenttest.LeftFragment"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"/>-->
+
     <fragment
         android:id="@+id/left_fragment"
         android:name="com.example.fragmenttest.LeftFragment"
-        android:layout_weight="1"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
     <!--<fragment-->
@@ -24,10 +30,10 @@
         <!--android:layout_width="0dp"-->
         <!--android:layout_height="match_parent"/>-->
 
-    <FrameLayout
-        android:id="@+id/right_fragment"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="match_parent">
-    </FrameLayout>
+    <!--<FrameLayout-->
+        <!--android:id="@+id/right_fragment"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</FrameLayout>-->
 </LinearLayout>

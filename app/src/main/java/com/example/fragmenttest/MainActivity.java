@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity /*implements View.OnClickListener*/{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,21 +16,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         Button button = (Button)findViewById(R.id.button);
-        button.setOnClickListener(this);
-        replaceFragment(new RightFragment());
+        //button.setOnClickListener(this);
+//        replaceFragment(new RightFragment());
     }
 
 
-    @Override
-    public void onClick(View v) {
-        replaceFragment(new AnotherRightFragment());
-    }
-
-    private void replaceFragment(Fragment fragment){
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.right_fragment,fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }
+//    @Override
+//    public void onClick(View v) {
+//        replaceFragment(new AnotherRightFragment());
+//    }
+//
+//    private void replaceFragment(Fragment fragment){
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        FragmentTransaction transaction = fragmentManager.beginTransaction();
+//        transaction.replace(R.id.right_fragment,fragment);
+//        transaction.addToBackStack(null);
+//        transaction.commit();
+//    }
 }
